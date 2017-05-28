@@ -15,14 +15,14 @@ public typealias CLLocationSpeed = Double
 public typealias CLLocationDirection = Double
 
 public struct CLLocationCoordinate2D {
-    var latitude: CLLocationDegrees
-    var longitude: CLLocationDegrees
-    init() {
+    public var latitude: CLLocationDegrees
+    public var longitude: CLLocationDegrees
+    public init() {
         latitude = 0
         longitude = 0
     }
     
-    init(latitude: CLLocationDegrees, longitude: CLLocationDegrees) {
+    public init(latitude: CLLocationDegrees, longitude: CLLocationDegrees) {
         self.latitude = latitude
         self.longitude = longitude
     }
